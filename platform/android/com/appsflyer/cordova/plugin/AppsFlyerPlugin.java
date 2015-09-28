@@ -82,11 +82,7 @@ public class AppsFlyerPlugin extends CordovaPlugin {
 			@Override
 			public void onInstallConversionDataLoaded(Map<String, String> conversionData) {
 				final String json = new JSONObject(conversionData).toString();
-				webView.post(new Runnable() {
-					public void run() {
-						webView.loadUrl("javascript:window.plugins.appsFlyer.onInstallConversionDataLoaded('"+json+"')");
-					}
-				});
+				webView.sendJavascript("window.plugins.appsFlyer.onInstallConversionDataLoaded('" + json + "')");
 			}
 
 			@Override

@@ -25,7 +25,7 @@ document.addEventListener("deviceready", function(){
 
 ## Installation using CLI:
 ```
-$ cordova plugin add https://github.com/AppsFlyerSDK/PhoneGap.git
+$ cordova plugin add https://github.com/requested/AppsFlyerSDK-PhoneGap.git
 ```
 Then reference `appsflyer.js` in `index.html`, after `cordova.js`/`phonegap.js`. Mind the path:
 ```html
